@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/mNfdSv6WGTjy4MCJvEeBKmGfQviNJu20A9xnTQ8T8IaiJ5Zlq3TBUMrTtEcck/f3Df7tYrilAehEj3SPQFX8w==",
+  "dgSpecHash": "DgvM/DUY1DPKZaaRpPjL1PEWPDETlwnqS4BAjbkk4zib69ZryJoCwrqMTZKmBGKTqBoFd6kItsMNQLssyXK8AQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Dominio\\Doacao.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Dominio\\Doacao.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mauro\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

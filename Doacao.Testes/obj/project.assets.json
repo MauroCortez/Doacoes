@@ -8,6 +8,15 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "Flunt/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.9.4": {
         "type": "package",
         "compile": {
@@ -1670,6 +1679,33 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Doacao.Comum/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Flunt": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Doacao.Comum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Doacao.Comum.dll": {}
+        }
+      },
+      "Doacao.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Doacao.Comum": "1.0.0",
+          "Flunt": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Doacao.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Doacao.Dominio.dll": {}
+        }
       }
     }
   },
@@ -1723,6 +1759,19 @@
         "coverlet-icon.png",
         "coverlet.collector.3.0.2.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
       ]
     },
     "Microsoft.CodeCoverage/16.9.4": {
@@ -5906,10 +5955,22 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Doacao.Comum/1.0.0": {
+      "type": "project",
+      "path": "../Doacao.Comum/Doacao.Comum.csproj",
+      "msbuildProject": "../Doacao.Comum/Doacao.Comum.csproj"
+    },
+    "Doacao.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Doacao.Dominio/Doacao.Dominio.csproj",
+      "msbuildProject": "../Doacao.Dominio/Doacao.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Doacao.Dominio >= 1.0.0",
+      "Flunt >= 2.0.5",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "coverlet.collector >= 3.0.2",
       "xunit >= 2.4.1",
@@ -5922,11 +5983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Testes\\Doacao.Testes.csproj",
+      "projectUniqueName": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Testes\\Doacao.Testes.csproj",
       "projectName": "Doacao.Testes",
-      "projectPath": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Testes\\Doacao.Testes.csproj",
+      "projectPath": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Testes\\Doacao.Testes.csproj",
       "packagesPath": "C:\\Users\\mauro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Testes\\obj\\",
+      "outputPath": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Testes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5942,7 +6003,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Dominio\\Doacao.Dominio.csproj": {
+              "projectPath": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Dominio\\Doacao.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5955,6 +6020,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Flunt": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.9.4, )"

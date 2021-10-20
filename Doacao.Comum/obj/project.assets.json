@@ -1,11 +1,37 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Flunt/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Flunt >= 2.0.5"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\mauro\\.nuget\\packages\\": {}
@@ -13,11 +39,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj",
+      "projectUniqueName": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj",
       "projectName": "Doacao.Comum",
-      "projectPath": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj",
+      "projectPath": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj",
       "packagesPath": "C:\\Users\\mauro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Comum\\obj\\",
+      "outputPath": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Comum\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +71,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "Flunt": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

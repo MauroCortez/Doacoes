@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YUIz9YqORwmCSYvO50ohfGJFKEICSFV86X6HlThjwsnnnD9iefujA6o5By+m6snSo9l/DoMLefJzFsYvXugD3Q==",
+  "dgSpecHash": "N0AjmSvC2+p689K5hwTaqNJBY3B/PiHoY1HfKjSOUItnRywdvw8wcDcLwn5jV5GS12sQtqQF9Zh8LgpDe3AgWQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Testes\\Doacao.Testes.csproj",
+  "projectFilePath": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Testes\\Doacao.Testes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauro\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
+    "C:\\Users\\mauro\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\mauro\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
     "C:\\Users\\mauro\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\mauro\\.nuget\\packages\\microsoft.net.test.sdk\\16.9.4\\microsoft.net.test.sdk.16.9.4.nupkg.sha512",

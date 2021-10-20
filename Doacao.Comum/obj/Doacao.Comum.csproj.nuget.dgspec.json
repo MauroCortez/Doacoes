@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj": {}
+    "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj": {
+    "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj",
+        "projectUniqueName": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj",
         "projectName": "Doacao.Comum",
-        "projectPath": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj",
+        "projectPath": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Comum\\Doacao.Comum.csproj",
         "packagesPath": "C:\\Users\\mauro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauro\\source\\repos\\Doacao\\Doacao.Comum\\obj\\",
+        "outputPath": "C:\\Users\\mauro\\Desktop\\Doacao\\Doacao.Comum\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
