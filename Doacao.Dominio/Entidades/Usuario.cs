@@ -25,12 +25,16 @@ namespace Doacao.Dominio
                     .IsNotEmpty(telefone, "Telefone", "Telefone não pode estar vazio")
                 );
 
-            Nome = nome;
-            Email = email;
-            Senha = senha;
-            TipoUsuario = tipoUsuario;
-            Endereco = endereco;
-            Telefone = telefone;
+            if (IsValid)
+            {
+                Nome = nome;
+                Email = email;
+                Senha = senha;
+                TipoUsuario = tipoUsuario;
+                Endereco = endereco;
+                Telefone = telefone;
+            }
+
         }
 
         public string Nome { get; private set; }
@@ -39,5 +43,38 @@ namespace Doacao.Dominio
         public EnTipoUsuario TipoUsuario { get; private set; }
         public string Endereco { get; private set; }
         public string Telefone { get; private set; }
+
+        // Composições
+        // public IReadOnlyCollection<Doacao> Doacaos { get; private set; }
+
+
+        // Atualizar a Senha
+        public void AtualizarSenha(string senha)
+        {
+            AddNotifications(
+                new Contract<Notification>()
+                    .Requires()
+                    .IsGreaterThan(senha, 7, "Senha", "A senha deve ter pelo menos 8 caracteres")
+                );
+                    
+                if (IsValid)
+                    Senha = senha;
+        }
+
+
+        // Atualizar o Usuario
+        public void AtualizarUsuario(string nome, string email)
+        {
+            AddNotifications(
+                new Contract<Notification>()
+                    .Requires()
+                    .IsNotEmpty(nome, "Nome", "Nome não pode ser vazio")
+                    .IsEmail(email, "Email", "O formato do email está incorreto")
+                );
+
+            if (IsValid)
+                Nome = nome;
+                Email = email;
+        }
     }
 }
