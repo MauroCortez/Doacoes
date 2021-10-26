@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "X2Ky94nZNsaeGOavgp/ZD7F3jyzIq+I3uU0pBxMBtqKp/4oJsHeEK4iBCgxo5gbT7h3JHar9ZU6SEHWTgiwEaA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mauro\\Desktop\\Doacao\\Back-end\\Doacao.Dominio\\Doacao.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mauro\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\mauro\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
